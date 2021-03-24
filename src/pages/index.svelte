@@ -10,14 +10,14 @@
   let shouldShowLayout
 
   onMount(async () => {
-    const isAuthenticated = await auth.isAuthenticated()
+    //const isAuthenticated = await auth.isAuthenticated()
 
-    if (isAuthenticated) {
-      shouldShowLayout = true
-    } else {
-      const params = new URLSearchParams(location.search)
-      $redirect('/login?' + params.toString())
-    }
+    //if (isAuthenticated) {
+    shouldShowLayout = true
+    //} else {
+    //const params = new URLSearchParams(location.search)
+    //$redirect('/login?' + params.toString())
+    //}
   })
 </script>
 
