@@ -1,6 +1,6 @@
 {
-  "name": "zea-svelte-template",
-  "version": "1.0.0",
+  "name": "zea-master-cylinder",
+  "version": "0.0.1",
   "dependencies": {
     "sha256": "^0.2.0",
     "svelte-accessible-dialog": "^2.1.2"
