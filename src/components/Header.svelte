@@ -237,6 +237,7 @@
     <img class="w-20 mx-3" src="/images/logo-zea.svg" alt="logo" />
 
     <MenuBar>
+      <!--
       <MenuBarItem label="View" let:isOpen>
         <Menu {isOpen}>
           <MenuItem
@@ -247,6 +248,7 @@
           />
         </Menu>
       </MenuBarItem>
+      -->
 
       <MenuBarItem label="Edit" let:isOpen>
         <Menu {isOpen}>
@@ -300,6 +302,7 @@
         </Menu>
       </MenuBarItem>
 
+      <!--
       <MenuBarItem label="More" let:isOpen>
         <Menu {isOpen}>
           <MenuItem label="Foo Bar" shortcut="Ctrl+A" />
@@ -316,6 +319,7 @@
           </MenuItemDropDown>
         </Menu>
       </MenuBarItem>
+      -->
     </MenuBar>
 
     {#if $APP_DATA}
