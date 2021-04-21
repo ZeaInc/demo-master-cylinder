@@ -34,34 +34,6 @@
   let undoRedoManager
   let userData
 
-  document.addEventListener('keydown', (event) => {
-    const canvasIsTarget = event.target.contains(renderer.getGLCanvas())
-
-    if (!canvasIsTarget) {
-      return
-    }
-
-    const key = event.key.toLowerCase()
-
-    switch (key) {
-      case 'f':
-        if (renderer) {
-          renderer.frameAll()
-        }
-        break
-      case 'z':
-        if (event.ctrlKey && undoRedoManager) {
-          undoRedoManager.undo()
-        }
-        break
-      case 'y':
-        if (event.ctrlKey && undoRedoManager) {
-          undoRedoManager.redo()
-        }
-        break
-    }
-  })
-
   const handleMenuSelectionChange = () => {
     if (!toolManager) {
       return
@@ -70,6 +42,10 @@
     isSelectionEnabled
       ? toolManager.pushTool('SelectionTool')
       : toolManager.popTool()
+  }
+
+  const handleMenuStagesClick = (stage) => {
+    window.location.href = `/?stage=${stage}`
   }
 
   onMount(() => {
@@ -226,30 +202,9 @@
 
 {#if !embeddedMode}
   <header class="flex items-center px-2 py-1 text-gray-200 z-50">
-    <span
-      class="material-icons cursor-default mr-2"
-      on:click={handleClickMenuToggle}
-      title="{$ui.shouldShowDrawer ? 'Close' : 'Open'} drawer"
-    >
-      {$ui.shouldShowDrawer ? 'menu_open' : 'menu'}
-    </span>
-
     <img class="w-20 mx-3" src="/images/logo-zea.svg" alt="logo" />
 
     <MenuBar>
-      <!--
-      <MenuBarItem label="View" let:isOpen>
-        <Menu {isOpen}>
-          <MenuItem
-            label="Frame All"
-            iconLeft="crop_free"
-            shortcut="F"
-            on:click={handleFrameAll}
-          />
-        </Menu>
-      </MenuBarItem>
-      -->
-
       <MenuBarItem label="Edit" let:isOpen>
         <Menu {isOpen}>
           <MenuItem
@@ -302,24 +257,34 @@
         </Menu>
       </MenuBarItem>
 
-      <!--
-      <MenuBarItem label="More" let:isOpen>
+      <MenuBarItem label="Stages" let:isOpen>
         <Menu {isOpen}>
-          <MenuItem label="Foo Bar" shortcut="Ctrl+A" />
-          <MenuItem label="Foo Bar" />
-          <MenuItem label="Foo Bar" iconLeft="storage" shortcut="Shift+B" />
-          <MenuItem label="Foo Bar" />
-          <MenuItem label="Foo Bar" shortcut="Alt+C" />
-          <MenuItem label="Foo Bar" />
-          <MenuItemDropDown label="Foo Bar" let:isOpen>
-            <Menu {isOpen}>
-              <MenuItem label="Foo Bar" />
-              <MenuItem label="Foo Bar" />
-            </Menu>
-          </MenuItemDropDown>
+          <MenuItem
+            label="Simulation"
+            on:click={() => {
+              handleMenuStagesClick('simulation')
+            }}
+          />
+          <MenuItem
+            label="Learning"
+            on:click={() => {
+              handleMenuStagesClick('learning')
+            }}
+          />
+          <MenuItem
+            label="Identification"
+            on:click={() => {
+              handleMenuStagesClick('identification')
+            }}
+          />
+          <MenuItem
+            label="Assembly"
+            on:click={() => {
+              handleMenuStagesClick('assembly')
+            }}
+          />
         </Menu>
       </MenuBarItem>
-      -->
     </MenuBar>
 
     {#if $APP_DATA}

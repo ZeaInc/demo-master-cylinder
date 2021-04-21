@@ -1,0 +1,86 @@
+{
+  "Resovoir": {
+    "En": "Fluid Resovoir",
+    "Jp": "液体リザーバー"
+  },
+  "Resovoir-detail": {
+    "En": "The brake fluid reservoir is sealed to prevent contamination. The fluid requires periodic inspection.",
+    "Jp": "ブレーキ液リザーバーは汚染を防ぐために密閉されています。液体は定期的な検査が必要です"
+  },
+  "Booster": {
+    "En": "Brake Booster",
+    "Jp": "ブレーキブースター"
+  },
+  "Booster-detail": {
+    "En": "The brake booster uses engine vacuum to help you apply the brakes.",
+    "Jp": "ブレーキブースターは、エンジンのバキュームを使用してブレーキをかけやすくします。"
+  },
+  "Cylinder": {
+    "En": "Master Cylinder",
+    "Jp": "マスターシリンダー"
+  },
+  "Cylinder-detail": {
+    "En": "This is a tandem master cylinder. It has 2 pistons, return springs, and ports that manage fluid flow.",
+    "Jp": "タンデムマスターシリンダーです。 2つのピストン、リターンスプリング、および流体の流れを管理するポートがあります。"
+  },
+  "Pushrod": {
+    "En": "Pushrod",
+    "Jp": "プッシュロッド"
+  },
+  "Pushrod-detail": {
+    "En": "When you push on the brake pedal, it moves the pushrod forward into the master cylinder.",
+    "Jp": "ブレーキペダルを踏むと、プッシュロッドがマスターシリンダーに前進します。"
+  },
+  "PressureChamber": {
+    "En": "Pressure Chamber",
+    "Jp": "圧力室"
+  },
+  "PressureChamber-detail": {
+    "En": "There is a pressure chamber full of fluid in front of each piston.",
+    "Jp": "各ピストンの前に流体で満たされた圧力室があります。"
+  },
+  "SecondaryPiston": {
+    "En": "Secondary Piston",
+    "Jp": "セカンダリピストン"
+  },
+  "SecondaryPiston-detail": {
+    "En": "The secondary piston only pushes oil to half the circuit",
+    "Jp": "セカンダリピストンは、オイルを回路の半分まで押すだけです。"
+  },
+  "PrimaryPiston": {
+    "En": "Primary Piston",
+    "Jp": "プライマリピストン"
+  },
+  "PrimaryPiston-detail": {
+    "En": "The primary piston pushes oil to half the brake circuit and to the secondary piston.",
+    "Jp": "プライマリピストンがオイルをブレーキ回路の半分とセカンダリピストンに押します"
+  },
+  "VentPort": {
+    "En": "Vent Port",
+    "Jp": "風の港"
+  },
+  "VentPort-detail": {
+    "En": "Fluid from the reservoir fills the brake circuit through the vent port. It also allows the fluid to expand into the reservoir when it gets hot",
+    "Jp": "リザーバーからの流体は、ベントポートを介してブレーキ回路を満たします。また、熱くなったときに、流体がリザーバー内に膨張することを可能にします"
+  },
+  "ReplenishingPort": {
+    "En": "Replenishing Port",
+    "Jp": "補給口"
+  },
+  "ReplenishingPort-detail": {
+    "En": "The replenishing port keeps the volume behind the piston filled with brake fluid as it moved forward while braking.",
+    "Jp": "補充ポートは、ブレーキ中にピストンが前進するときに、ブレーキ液で満たされたピストンの後ろの容積を維持します。"
+  },
+  "PrimaryReturnSpring": {
+    "En": "Primary Return Spring",
+    "Jp": "プライマリーリターンスプリング"
+  },
+  "SecondaryReturnSpring": {
+    "En": "Secondary Return Spring",
+    "Jp": "二次リターンスプリング"
+  },
+  "Seal": {
+    "En": "Seal",
+    "Jp": "シール"
+  }
+}
